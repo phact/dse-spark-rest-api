@@ -15,7 +15,7 @@ Depending on user requirements, there are a few different ways of doing so. This
 
 ### What is included?
 
-This field asset includes a simple batch analytics application and describes how to use the:
+This field asset includes a simple batch analytics application (borrowed from Russ: https://github.com/RussellSpitzer/ProgrammaticSparkExample) and describes how to use:
 
 * `dse spark-submit`
 * Undocumented Spark RESTFUL API
@@ -30,7 +30,7 @@ In analytics use cases, Business stakeholders depend on timely and trackable run
 
 ### Technical Take Aways
 
-The preffered method for submitting spark applications (whether remotely using `dse client-tool` or from the cluster itself) is `dse spark-submit`. DSE takes care of setting environmental variables and identifying the Spark master for application submission automatically simplifying availability requirements of spark applications.
+The prefered method for submitting spark applications (whether remotely using `dse client-tool` or from the cluster itself) is `dse spark-submit`. DSE takes care of setting environmental variables and identifying the Spark master for application submission automatically simplifying availability requirements of spark applications.
 
 However, some users require the ability to submit spark jobs remotely via REST. In these cases, customers often find out about job server and incurr the complexity that goes along with job server to achieve REST submission. In many cases the undocumented Spark REST api is enough. This asset shows how simple it is to use it.
 
