@@ -3,6 +3,6 @@ sparkbuild
 jobserverbuild
 submit
 startjobserver
-submit-jobserver
+jobserver-submit
 rest-submit
 remoteSubmit
