@@ -18,12 +18,9 @@ Depending on user requirements, there are a few different ways of doing so. This
 This field asset includes a simple batch analytics application and describes how to use the:
 
 * `dse spark-submit`
-* Undocumented Spark RESTFUL API
-
-To submit it to the cluster. Other alternatives for execution include
-
-* `dse spark-client`
+* `dse spark-client` to configure a remote spark submit with dse binaries
 * spark job server
+* Undocumented Spark RESTFUL API (do not use)
 
 ### Business Take Aways
 
@@ -33,9 +30,4 @@ In analytics use cases, Business stakeholders depend on timely and trackable run
 
 The preffered method for submitting spark applications (whether remotely using `dse client-tool` or from the cluster itself) is `dse spark-submit`. DSE takes care of setting environmental variables and identifying the Spark master for application submission automatically simplifying availability requirements of spark applications.
 
-However, some users require the ability to submit spark jobs remotely via REST. In these cases, customers often find out about job server and incur the complexity that goes along with job server to achieve REST submission. In some cases the undocumented Spark REST api is sufficient to meet the requirement.
-However, be aware that the Spark REST API is not supported by DataStax or by
-the spark communtiy.
-
-Note: Starting with DSE 5.1 we are able to automatically find the Master for job submissions and allow the selection of a local datacenter for a spark job by using the `dse://` syntax in the `.master` property. The implementation of `dse://` has broken compatibility with the Spark RESTful API in 5.1.0.
-
+However, some users require the ability to submit spark jobs remotely via REST. In these cases it is necessary to look into other options.
