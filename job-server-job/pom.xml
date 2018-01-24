@@ -69,6 +69,7 @@
       <version>0.6.2.234</version>
       <scope>provided</scope>
     </dependency>
+  </dependencies>
 
   <build>
     <plugins>
