@@ -9,7 +9,6 @@ import org.apache.spark.sql.cassandra._
 import org.apache.spark.sql.SparkSession
 import spark.jobserver.{SparkJob, SparkJobInvalid, SparkJobValid, SparkJobValidation}
 
-import scala.slick.direct.AnnotationMapper.table
 import scala.util.Try
 
 /**

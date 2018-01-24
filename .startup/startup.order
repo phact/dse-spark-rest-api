@@ -1,4 +1,7 @@
 hugo
-build
-rest-submit
+sparkbuild
+jobserverbuild
 submit
+startjobserver
+submit-jobserver
+rest-submit

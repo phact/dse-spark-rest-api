@@ -25,44 +25,7 @@
       <version>${dse.version}</version>
       <scope>provided</scope>
     </dependency>
-    <!-- Your dependencies, 'provided' are not included in jar -->
-    <!--<dependency>-->
-      <!--<groupId>org.apache.commons</groupId>-->
-      <!--<artifactId>commons-math3</artifactId>-->
-      <!--<version>3.6.1</version>-->
-    <!--</dependency>-->
-    <!--<dependency>-->
-      <!--<groupId>org.apache.commons</groupId>-->
-      <!--<artifactId>commons-csv</artifactId>-->
-      <!--<version>1.0</version>-->
-    <!--</dependency>-->
 
-    <!-- Test Dependencies -->
-    <dependency>
-      <groupId>com.datastax.spark</groupId>
-      <artifactId>spark-cassandra-connector-embedded_${scala.main.version}</artifactId>
-      <version>${connector.version}</version>
-      <scope>test</scope>
-    </dependency>
-    <dependency>
-      <groupId>org.scalatest</groupId>
-      <artifactId>scalatest_${scala.main.version}</artifactId>
-      <version>${scalatest.version}</version>
-      <scope>test</scope>
-    </dependency>
-    <dependency>
-      <groupId>junit</groupId>
-      <artifactId>junit</artifactId>
-      <version>${junit.version}</version>
-      <scope>test</scope>
-    </dependency>
-    <dependency>
-      <groupId>org.apache.cassandra</groupId>
-      <artifactId>cassandra-all</artifactId>
-      <version>${cassandra.version}</version>
-      <scope>test</scope>
-    </dependency>
-    <!-- https://mvnrepository.com/artifact/spark.jobserver/job-server-api -->
     <dependency>
       <groupId>spark.jobserver</groupId>
       <artifactId>job-server-api_2.11</artifactId>
