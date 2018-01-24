@@ -4,7 +4,7 @@ set -x
 curl -X POST \
   http://localhost:8090/jars/readWrite \
   -H 'cache-control: no-cache' \
-  --data-binary @job-server-job/target/original-writeRead-0.1.jar
+  --data-binary @job-server-job/target/writeRead-0.1.jar
 
 curl -X POST "localhost:8090/jobs?appName=readWrite&classPath=com.datastax.spark.example.WriteRead"
 
