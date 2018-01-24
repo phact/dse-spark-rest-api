@@ -66,15 +66,9 @@
     <dependency>
       <groupId>spark.jobserver</groupId>
       <artifactId>job-server-api_2.11</artifactId>
-      <version>0.6.2</version>
+      <version>0.6.2.234</version>
+      <scope>provided</scope>
     </dependency>
-    <!-- https://mvnrepository.com/artifact/spark.jobserver/job-server -->
-    <dependency>
-      <groupId>spark.jobserver</groupId>
-      <artifactId>job-server_2.11</artifactId>
-      <version>0.6.2</version>
-    </dependency>
-  </dependencies>
 
   <build>
     <plugins>
