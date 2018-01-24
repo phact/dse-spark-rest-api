@@ -21,6 +21,7 @@ This field asset includes a simple batch analytics application and describes how
 * Undocumented Spark RESTFUL API
 
 To submit it to the cluster. Other alternatives for execution include
+
 * `dse spark-client`
 * spark job server
 

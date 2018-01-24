@@ -62,14 +62,19 @@
       <version>${cassandra.version}</version>
       <scope>test</scope>
     </dependency>
+    <!-- https://mvnrepository.com/artifact/spark.jobserver/job-server-api -->
+    <dependency>
+      <groupId>spark.jobserver</groupId>
+      <artifactId>job-server-api_2.11</artifactId>
+      <version>0.6.2</version>
+    </dependency>
+    <!-- https://mvnrepository.com/artifact/spark.jobserver/job-server -->
+    <dependency>
+      <groupId>spark.jobserver</groupId>
+      <artifactId>job-server_2.11</artifactId>
+      <version>0.6.2</version>
+    </dependency>
   </dependencies>
-
-  <repositories>
-    <repository>
-      <id>DataStax-Repo</id>
-      <url>https://repo.datastax.com/public-repos/</url>
-    </repository>
-  </repositories>
 
   <build>
     <plugins>
@@ -85,7 +90,7 @@
               <goal>testCompile</goal>
             </goals>
             <configuration>
-              <mainSourceDir>${project.build.sourceDirectory}/../scala</mainSourceDir>
+              <!--<mainSourceDir>${project.build.sourceDirectory}/../scala</mainSourceDir> -->
             </configuration>
           </execution>
         </executions>

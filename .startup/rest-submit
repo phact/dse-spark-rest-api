@@ -1,1 +1,4 @@
+#!/bin/bash
+set -x
+
 ./rest-client-submit.sh
