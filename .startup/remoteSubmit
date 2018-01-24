@@ -1,0 +1,10 @@
+#!/bin/bash
+set -x
+
+echo "Run from the dse node"
+dse client-tool configuration export config.tar
+
+echo "Run from remote node with dse installed"
+dse client-tool configuration import config.tar
+
+dse spark-submit --class com.datastax.spark.example.WriteRead spark-job/target/writeRead-0.1.jar
