@@ -22,3 +22,4 @@ Job server provides some benefits aside from remote REST submission for more com
 * jobserver UI on port 8090
 * remote REST submission
 * shared spark context - better performance since the job can be run on an existing spark application (this is the same tactic used by sparksql thriftserver)
+* security features
