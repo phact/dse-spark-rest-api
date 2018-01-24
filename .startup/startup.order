@@ -5,3 +5,4 @@ submit
 startjobserver
 submit-jobserver
 rest-submit
+remoteSubmit
